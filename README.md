@@ -358,3 +358,36 @@ F = 0.27688777750129406
 # Output string: ProgresiveSerieFibonacci(TextBox1.Text, TextBox2.Text, False)
 F = (π/ 2)/√( 1000+ 0)  +  (π/ 1.9)/√( 1001+ 1)  +  (π/ 1.8)/√( 1003+ 1)  +  (π/ 1.7)/√( 1006+ 2)  +  (π/ 1.6)/√( 1010+ 3)
 ```
+
+`14.- 2√x^2/100 + 4√x^4/50 + 8√x^8/25... La raíz multiplica, mientras que el denominador dentro la raíz desdobla (divide).`
+```vb
+Public Function SerieMultiplyAndUnfold(n As Integer, root As Double, num As Double, denom As Double, sumTotal As Boolean) As String
+    Dim result As String = ""
+    Dim index As Integer
+    Dim total, formule As Double
+    For index = 1 To n
+        If sumTotal Then
+            formule = Math.Pow(Math.Pow(num, root) / denom, 1 / root)
+            total += formule
+            result = Str(total)
+        Else
+            If index = n Then
+                result = result + Str(root) + "√(" + Str(num) + "^" + Str(root) + "/" + Str(denom) + ")"
+            Else
+                result = result + Str(root) + "√(" + Str(num) + "^" + Str(root) + "/" + Str(denom) + ")  +  "
+            End If
+        End If
+        root = Math.Round(root * 2, 2)
+        denom = Math.Round(denom / 2, 2)
+    Next
+    Return "F = " + result
+End Function
+```
+```bash
+# Output: SerieMultiplyAndUnfold(TextBox1.Text, TextBox2.Text,TextBox3.Text, TextBox4.Text, True)
+F = 1.9987716171427177
+# Output string with params: SerieMultiplyAndUnfold(4, 2, 1, 100, False)
+F = 2√( 1^ 2/ 100)  +   4√( 1^ 4/ 50)  +   8√( 1^ 8/ 25)  +   16√( 1^ 16/ 12.5)
+```
+
+`15. disponible pronto... :)`
