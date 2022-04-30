@@ -390,4 +390,36 @@ F = 1.9987716171427177
 F = 2√( 1^ 2/ 100)  +   4√( 1^ 4/ 50)  +   8√( 1^ 8/ 25)  +   16√( 1^ 16/ 12.5)
 ```
 
-`15. disponible pronto... :)`
+`15. (2+x^(1/16)) + (4+x^(1/14))... La base va doblando. OJO , HASTA QUE EL TERMINO DONDE X ELEVE A 1/2`
+
+```vb
+Public Function SerieBaseIsDoubling(n As Integer, base As Double, x As Double, denom As Double, sumTotal As Boolean) As String
+    Dim result As String = ""
+    Dim index As Integer
+    Dim total, formule As Double
+    For index = 1 To n
+        If sumTotal Then
+            formule = base + Math.Pow(x, 1 / denom)
+            total += formule
+            result = total
+        Else
+            If denom >= 2 Then
+                If index = n Then
+                    result = result + "(" + Str(base) + "+" + Str(x) + "^(1/" + Str(denom) + "))"
+                Else
+                    result = result + "(" + Str(base) + "+" + Str(x) + "^(1/" + Str(denom) + "))  + "
+                End If
+            End If
+        End If
+        base *= 2
+        denom -= 2
+    Next
+    Return "F = " + result
+End Function
+```
+```bash
+# Output: SerieBaseIsDoubling(TextBox1.Text, vi, r, arg, True)
+F = 2056
+# Output string with params: SerieBaseIsDoubling(10, 2, 1, 16, False)
+F = ( 2+ 1^(1/ 16))  + ( 4+ 1^(1/ 14))  + ( 8+ 1^(1/ 12))  + ( 16+ 1^(1/ 10))  + ( 32+ 1^(1/ 8))  + ( 64+ 1^(1/ 6))  + ( 128+ 1^(1/ 4))  + ( 256+ 1^(1/ 2))
+```
