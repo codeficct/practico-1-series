@@ -5,7 +5,7 @@ This resposiory is to save projects practices of university UAGRM.
  -->
  
  ```vb
-<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+ <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
@@ -48,6 +48,8 @@ Partial Class Form1
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SerieToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SerieBaseVaDoblandoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ParcialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AcumularTerminoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
@@ -71,8 +73,6 @@ Partial Class Form1
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
-        Me.ParcialToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AcumularTerminoToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -202,12 +202,24 @@ Partial Class Form1
         Me.SerieBaseVaDoblandoToolStripMenuItem.Size = New System.Drawing.Size(272, 22)
         Me.SerieBaseVaDoblandoToolStripMenuItem.Text = "15. Serie Pr. base va doblando"
         '
+        'ParcialToolStripMenuItem
+        '
+        Me.ParcialToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AcumularTerminoToolStripMenuItem})
+        Me.ParcialToolStripMenuItem.Name = "ParcialToolStripMenuItem"
+        Me.ParcialToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
+        Me.ParcialToolStripMenuItem.Text = "Parcial"
+        '
+        'AcumularTerminoToolStripMenuItem
+        '
+        Me.AcumularTerminoToolStripMenuItem.Name = "AcumularTerminoToolStripMenuItem"
+        Me.AcumularTerminoToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
+        Me.AcumularTerminoToolStripMenuItem.Text = "1. Acumular Termino"
+        '
         'TextBox1
         '
         Me.TextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TextBox1.Location = New System.Drawing.Point(306, 42)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.PlaceholderText = "n"
         Me.TextBox1.Size = New System.Drawing.Size(100, 29)
         Me.TextBox1.TabIndex = 2
         '
@@ -216,7 +228,6 @@ Partial Class Form1
         Me.TextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TextBox2.Location = New System.Drawing.Point(412, 42)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.PlaceholderText = "vi"
         Me.TextBox2.Size = New System.Drawing.Size(100, 29)
         Me.TextBox2.TabIndex = 3
         '
@@ -225,7 +236,6 @@ Partial Class Form1
         Me.TextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TextBox3.Location = New System.Drawing.Point(518, 42)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.PlaceholderText = "r"
         Me.TextBox3.Size = New System.Drawing.Size(100, 29)
         Me.TextBox3.TabIndex = 4
         '
@@ -236,7 +246,6 @@ Partial Class Form1
         Me.Results.Location = New System.Drawing.Point(306, 77)
         Me.Results.Multiline = True
         Me.Results.Name = "Results"
-        Me.Results.PlaceholderText = "Resultados..."
         Me.Results.ReadOnly = True
         Me.Results.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.Results.Size = New System.Drawing.Size(529, 211)
@@ -262,7 +271,6 @@ Partial Class Form1
         Me.Results2.Location = New System.Drawing.Point(306, 304)
         Me.Results2.Multiline = True
         Me.Results2.Name = "Results2"
-        Me.Results2.PlaceholderText = "Resultados 2"
         Me.Results2.ReadOnly = True
         Me.Results2.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
         Me.Results2.Size = New System.Drawing.Size(529, 97)
@@ -334,9 +342,9 @@ Partial Class Form1
         Me.Label7.ForeColor = System.Drawing.Color.DarkGray
         Me.Label7.Location = New System.Drawing.Point(306, 26)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(51, 13)
+        Me.Label7.Size = New System.Drawing.Size(14, 13)
         Me.Label7.TabIndex = 13
-        Me.Label7.Text = "TextBox1"
+        Me.Label7.Text = "n"
         '
         'Label8
         '
@@ -345,9 +353,9 @@ Partial Class Form1
         Me.Label8.ForeColor = System.Drawing.Color.DarkGray
         Me.Label8.Location = New System.Drawing.Point(412, 26)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(51, 13)
+        Me.Label8.Size = New System.Drawing.Size(15, 13)
         Me.Label8.TabIndex = 14
-        Me.Label8.Text = "TextBox2"
+        Me.Label8.Text = "vi"
         '
         'Label9
         '
@@ -356,9 +364,9 @@ Partial Class Form1
         Me.Label9.ForeColor = System.Drawing.Color.DarkGray
         Me.Label9.Location = New System.Drawing.Point(518, 26)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(51, 13)
+        Me.Label9.Size = New System.Drawing.Size(11, 13)
         Me.Label9.TabIndex = 15
-        Me.Label9.Text = "TextBox3"
+        Me.Label9.Text = "r"
         '
         'Label10
         '
@@ -402,16 +410,15 @@ Partial Class Form1
         Me.Label13.ForeColor = System.Drawing.Color.DarkGray
         Me.Label13.Location = New System.Drawing.Point(624, 26)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(51, 13)
+        Me.Label13.Size = New System.Drawing.Size(24, 13)
         Me.Label13.TabIndex = 20
-        Me.Label13.Text = "TextBox4"
+        Me.Label13.Text = "arg"
         '
         'TextBox4
         '
         Me.TextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.TextBox4.Location = New System.Drawing.Point(624, 42)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.PlaceholderText = "arg"
         Me.TextBox4.Size = New System.Drawing.Size(100, 29)
         Me.TextBox4.TabIndex = 19
         '
@@ -463,19 +470,6 @@ Partial Class Form1
         Me.Label17.TabIndex = 25
         Me.Label17.Text = "15. Serie progresiva cuando la base va doblando," & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "      (n: terminos, vi: base in" &
     "icial, r: valor de x, arg: denominador)"
-        '
-        'ParcialToolStripMenuItem
-        '
-        Me.ParcialToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AcumularTerminoToolStripMenuItem})
-        Me.ParcialToolStripMenuItem.Name = "ParcialToolStripMenuItem"
-        Me.ParcialToolStripMenuItem.Size = New System.Drawing.Size(54, 20)
-        Me.ParcialToolStripMenuItem.Text = "Parcial"
-        '
-        'AcumularTerminoToolStripMenuItem
-        '
-        Me.AcumularTerminoToolStripMenuItem.Name = "AcumularTerminoToolStripMenuItem"
-        Me.AcumularTerminoToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
-        Me.AcumularTerminoToolStripMenuItem.Text = "1. Acumular Termino"
         '
         'Form1
         '
