@@ -1,3 +1,7 @@
+## Important
+- ### The `graphics-windows-form` practice is now private, to see the content contact me to have access to the repository.
+- My discord id `sauterdev#9448`
+
 ## Practice-1 visual-basic in Windows Forms of Engineer Mollo
 `1,2,3,4. Generar la tabla de operaciones aritméticas de n... términos (+, -, *, /).`
 ```vb
