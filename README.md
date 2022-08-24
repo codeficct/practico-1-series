@@ -21,6 +21,7 @@ Practico de Series de la introduccion a la informatica con el ingeniero Mollo.
 15. [Ejercicio 15](#ejercicio-15)
 
 ## Ejercicio 1, 2, 3 y 4
+![ejercicio-1-2-3-4](https://user-images.githubusercontent.com/88288135/186444074-653c7913-ab1b-4380-9787-0f90a8111970.png)
 
 Ejercicios 1,2,3,4. Generar la tabla de operaciones aritméticas de n... términos:
 - suma
@@ -75,6 +76,8 @@ End Function
 </details>
 
 ## Ejercicio 5
+![ejercicio-5](https://user-images.githubusercontent.com/88288135/186444118-0bfc580e-d4ca-42db-a068-81542f431b45.png)
+
 Sumar una serie regular de n términos:
 
 <details>
@@ -111,6 +114,8 @@ F =  2  +  4  +  6  +  8  +  10
 </details>
 
 ## Ejercicio 6
+![ejercicio-6](https://user-images.githubusercontent.com/88288135/186444149-b07db024-76ab-456f-b80b-872fb3d71c00.png)
+
 `F = (ln(10)+1)/1.7 + (ln(100)+2)/1.9...` El argumento del Log10, está multiplicando. X10, X10,..utilice acumulador multiplicador.
 
 <details>
@@ -152,6 +157,8 @@ F = (ln(10)+1)/1.7 +  (ln(100)+ 2)/ 1.9  +  (ln(1000)+3)/2.1  + (ln(10000)+4)/2.
 </details>
 
 ## Ejercicio 7
+![ejercicio-7](https://user-images.githubusercontent.com/88288135/186444172-7c5ad491-5820-4e0c-ba67-8f2ea91e95a7.png)
+
 `F = 100/1 + 99/2 + 97/4...` el numerador Va reduciendo el termino en 1, 2, 3… mientras que el denominador incrementando en 1,2,3…, debe tener valor inicial del numerador VIN=100, y valor inicial del denominador VID=1.
 
 <details>
@@ -190,6 +197,8 @@ F = 100/ 1 +   99/ 2 +   97/ 4 +   94/ 7 +   90/ 11
 </details>
 
 ## Ejercicio 8
+![ejercicio-8](https://user-images.githubusercontent.com/88288135/186444205-1d258a44-004e-4e25-98b1-61077c6cbefe.png)
+
 `F = 5.25/0!+0 + 5.24/1!+1 + 5.22/2!+2...` Ambos elementos son series regulares y para el denominador solo debes llamar a la función factorial, claro que debes aprender hacer el algoritmo para el examen.
 
 <details>
@@ -249,6 +258,8 @@ F = 5.25/(!0+0) + 5.24/(!1+1) + 5.22/(!2+2) + 5.19/(!3+3) + 5.15/(!4+4) + 5.1/(!
 </details>
 
 ## Ejercicio 9
+![ejercicio-9](https://user-images.githubusercontent.com/88288135/186444267-a8bf051f-1d49-432b-a97c-f1f43e6ac8cd.png)
+
 `F = X^2/2! + X^4/4! + X^6/6!+…` X, es solo una variable de entrada que se debe tomar en el término
 
 <details>
@@ -287,6 +298,8 @@ F = (2^2)/ 2! + (2^4)/ 4! + (2^6)/ 6! + (2^8)/ 8! + (2^10)/ 10!
 </details>
 
 ## Ejercicio 10
+![ejercicio-10](https://user-images.githubusercontent.com/88288135/186444302-45eed81f-27ac-42f8-9364-232f7953f9f3.png)
+
 `3√(0+x1) + 6√(1+x1) + 9√(1+x1)...` El argumento de la raíz es Fibonacci mas una varible x1.
 
 <details>
@@ -328,6 +341,8 @@ F = 3√(0+2) +  6√(1+2) +  9√(1+2) +  12√(2+2) +  15√(3+2)
 </details>
 
 ## Ejercicio 11
+![ejercicio-11](https://user-images.githubusercontent.com/88288135/186444327-afec7074-ce3a-4497-b984-6c293bbeeb5f.png)
+
 `20√cos(0.2) - 19√cos(0.4) + 18√cos(0.6)...` “pimponea”, o sea suma el termino y resta, suma y resta. ESTE NO ES N TERMINOS, SINO HASTA QUE LA RAIZ SEA 2 OSEA EL UTLIMO ELEMENTO SERA 2√cos(...).
 
 <details>
@@ -374,6 +389,8 @@ F = 3√(0+2) +  6√(1+2) +  9√(1+2) +  12√(2+2) +  15√(3+2)
 </details>
 
 ## Ejercicio 12
+![ejercicio-12](https://user-images.githubusercontent.com/88288135/186444349-d79cc7de-1bcb-4696-8098-46bcd8ef3311.png)
+
 `√(sin(0.1)/(3!/2)) + √(sin(0.11)/(3!/2))...` También pimponea, resta y suma, resta y suma el termino.
 
 <details>
@@ -413,6 +430,8 @@ F = - √sin( 0.1)/( 3!/2) + √sin( 0.11)/( 6!/2) - √sin( 0.12)/( 9!/2) + √
 </details>
 
 ## Ejercicio 13
+![ejercicio-13](https://user-images.githubusercontent.com/88288135/186444385-50e5f5ae-7990-48da-bb87-434123617752.png)
+
 `(π/2)/√(1000+0) + (π/1.9)/√(1001+1) + (π/1.8)/√(1003+1)` El argumento de la raíz va en incremento en una progresión: Del 1ro al 2do 1; del 2do al 3ro 2; del 3ro al 4to 3; …mientras que el otro es Fibonacci.
 
 <details>
@@ -455,6 +474,8 @@ F = (π/ 2)/√( 1000+ 0)  +  (π/ 1.9)/√( 1001+ 1)  +  (π/ 1.8)/√( 1003+ 1
 </details>
 
 ## Ejercicio 14
+![ejercicio-14](https://user-images.githubusercontent.com/88288135/186444419-969b8549-6639-4687-95e5-70c9ecdff06c.png)
+
 `2√x^2/100 + 4√x^4/50 + 8√x^8/25...` La raíz multiplica, mientras que el denominador dentro la raíz desdobla (divide).
 
 <details>
@@ -493,6 +514,8 @@ F = 2√( 1^ 2/ 100)  +   4√( 1^ 4/ 50)  +   8√( 1^ 8/ 25)  +   16√( 1^ 16
 </details>
 
 ## Ejercicio 15
+![ejercicio-15](https://user-images.githubusercontent.com/88288135/186444442-19d4cae6-b553-4cf4-8ada-9bd04c631593.png)
+
 (`2+x^(1/16)) + (4+x^(1/14))...` La base va doblando. OJO , HASTA QUE EL TERMINO DONDE X ELEVE A 1/2
 
 <details>
