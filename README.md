@@ -4,10 +4,10 @@ Practico de Series de la introduccion a la informatica con el ingeniero Mollo.
 - [ver PDF del práctico](https://drive.google.com/file/d/17pNVzbHrNzvcWico6ENC5BTHh7xvRfQa/view?usp=sharing)
 
 ## Contenido
-1. [Generar la tabla de multiplicar de n](#ejercicio-1)
-2. [Generar la división de n](#ejercicio-1)
-3. [Generar la suma de n](#ejercicio-1)
-4. [Generar la resta de n](#ejercicio-1)
+1. [Generar la tabla de multiplicar de n](#ejercicio-1-2-3-y-4)
+2. [Generar la división de n](#ejercicio-1-2-3-y-4)
+3. [Generar la suma de n](#ejercicio-1-2-3-y-4)
+4. [Generar la resta de n](#ejercicio-1-2-3-y-4)
 5. [Ejercicio 5](#ejercicio-5)
 6. [Ejercicio 6](#ejercicio-6)
 7. [Ejercicio 7](#ejercicio-7)
@@ -20,13 +20,17 @@ Practico de Series de la introduccion a la informatica con el ingeniero Mollo.
 14. [Ejercicio 14](#ejercicio-14)
 15. [Ejercicio 15](#ejercicio-15)
 
-## Ejercicio 1
+## Ejercicio 1, 2, 3 y 4
 
 Ejercicios 1,2,3,4. Generar la tabla de operaciones aritméticas de n... términos:
 - suma
 - resta
 - multiplación
 - división
+
+<details>
+  <summary>Ver código</summary>
+
 ```vb
 Public Function SelectTable(n As Double, operatorString As String) As String
   Dim result, symbol As String
@@ -67,8 +71,15 @@ End Function
  9 + 5 =  14
  10 + 5 =  15
 ```
+
+</details>
+
 ## Ejercicio 5
 Sumar una serie regular de n términos:
+
+<details>
+  <summary>Ver código</summary>
+
 ```vb
 Public Function RegularSerie(n As UInt16, initialValue As Single, razon As Single, sumTotal As Boolean) As String
     Dim result As String = ""
@@ -96,8 +107,15 @@ F = 30
 # Output string: RegularSerie(TextBox1.Text, TextBox2.Text, TextBox3.Text, False)
 F =  2  +  4  +  6  +  8  +  10
 ```
+
+</details>
+
 ## Ejercicio 6
 `F = (ln(10)+1)/1.7 + (ln(100)+2)/1.9...` El argumento del Log10, está multiplicando. X10, X10,..utilice acumulador multiplicador.
+
+<details>
+  <summary>Ver código</summary>
+
 ```vb
 Public Function LogarithmSerie(n As Integer, initialValue As Double, razon As Double, arg As Double, sumTotal As Boolean) As String
     Dim result As String = ""
@@ -131,8 +149,14 @@ F = 13.617137472838102
 F = (ln(10)+1)/1.7 +  (ln(100)+ 2)/ 1.9  +  (ln(1000)+3)/2.1  + (ln(10000)+4)/2.3  +  (ln(100000)+5)/2.5
 ```
 
+</details>
+
 ## Ejercicio 7
 `F = 100/1 + 99/2 + 97/4...` el numerador Va reduciendo el termino en 1, 2, 3… mientras que el denominador incrementando en 1,2,3…, debe tener valor inicial del numerador VIN=100, y valor inicial del denominador VID=1.
+
+<details>
+  <summary>Ver código</summary>
+  
 ```vb
 Public Function IncreaseAndDecrease(n As Integer, initialValueNumerator As Integer, initialValueDenominator As Integer, isSumTotal As Boolean) As String
     Dim result As String = ""
@@ -163,8 +187,14 @@ F = 195.3603896103896
 F = 100/ 1 +   99/ 2 +   97/ 4 +   94/ 7 +   90/ 11
 ```
 
+</details>
+
 ## Ejercicio 8
 `F = 5.25/0!+0 + 5.24/1!+1 + 5.22/2!+2...` Ambos elementos son series regulares y para el denominador solo debes llamar a la función factorial, claro que debes aprender hacer el algoritmo para el examen.
+
+<details>
+  <summary>Ver código</summary>
+  
 ```vb
 Public Function Factorial(number As Double) As Double
     Dim fac As Double
@@ -216,8 +246,14 @@ F = 4.750333333333333
 F = 5.25/(!0+0) + 5.24/(!1+1) + 5.22/(!2+2) + 5.19/(!3+3) + 5.15/(!4+4) + 5.1/(!5+5)
 ```
 
+</details>
+
 ## Ejercicio 9
 `F = X^2/2! + X^4/4! + X^6/6!+…` X, es solo una variable de entrada que se debe tomar en el término
+
+<details>
+  <summary>Ver código</summary>
+  
 ```vb
 Public Function SumFactorial(n As Integer, x As Single, sumTotal As Boolean) As String
     Dim result As String = ""
@@ -248,8 +284,14 @@ F = 0.0002821869488536155
 F = (2^2)/ 2! + (2^4)/ 4! + (2^6)/ 6! + (2^8)/ 8! + (2^10)/ 10!
 ```
 
+</details>
+
 ## Ejercicio 10
 `3√(0+x1) + 6√(1+x1) + 9√(1+x1)...` El argumento de la raíz es Fibonacci mas una varible x1.
+
+<details>
+  <summary>Ver código</summary>
+  
 ```vb
 Public Function SerieProgresiveFibonacci(n As Integer, x As Double, viRoot As Integer, sumTotal As Boolean) As String
     Dim result As String = ""
@@ -283,8 +325,14 @@ F = 5.455187736786854
 F = 3√(0+2) +  6√(1+2) +  9√(1+2) +  12√(2+2) +  15√(3+2)
 ```
 
+</details>
+
 ## Ejercicio 11
 `20√cos(0.2) - 19√cos(0.4) + 18√cos(0.6)...` “pimponea”, o sea suma el termino y resta, suma y resta. ESTE NO ES N TERMINOS, SINO HASTA QUE LA RAIZ SEA 2 OSEA EL UTLIMO ELEMENTO SERA 2√cos(...).
+
+<details>
+  <summary>Ver código</summary>
+  
 ```vb
 Public Shared Function Pinponear(root As Double, vi As Double, razon As Double, sumTotal As Boolean) As String
     Dim result As String = ""
@@ -323,8 +371,14 @@ F = 5.455187736786854
 F = 3√(0+2) +  6√(1+2) +  9√(1+2) +  12√(2+2) +  15√(3+2)
 ```
 
+</details>
+
 ## Ejercicio 12
 `√(sin(0.1)/(3!/2)) + √(sin(0.11)/(3!/2))...` También pimponea, resta y suma, resta y suma el termino.
+
+<details>
+  <summary>Ver código</summary>
+  
 ```vb
 Public Function ProgresiveSeriePinponear(n As Integer, initValue As Double, r As Double, arg As Double, sumTotal As Boolean)
     Dim result As String = ""
@@ -356,8 +410,14 @@ F = -0.16574853902978934
 F = - √sin( 0.1)/( 3!/2) + √sin( 0.11)/( 6!/2) - √sin( 0.12)/( 9!/2) + √sin( 0.13)/( 12!/2)
 ```
 
+</details>
+
 ## Ejercicio 13
 `(π/2)/√(1000+0) + (π/1.9)/√(1001+1) + (π/1.8)/√(1003+1)` El argumento de la raíz va en incremento en una progresión: Del 1ro al 2do 1; del 2do al 3ro 2; del 3ro al 4to 3; …mientras que el otro es Fibonacci.
+
+<details>
+  <summary>Ver código</summary>
+  
 ```vb
 Public Function ProgresiveSerieFibonacci(n As Integer, initValue As Integer, sumTotal As Boolean) As String
     Dim result As String = ""
@@ -392,8 +452,14 @@ F = 0.27688777750129406
 F = (π/ 2)/√( 1000+ 0)  +  (π/ 1.9)/√( 1001+ 1)  +  (π/ 1.8)/√( 1003+ 1)  +  (π/ 1.7)/√( 1006+ 2)  +  (π/ 1.6)/√( 1010+ 3)
 ```
 
+</details>
+
 ## Ejercicio 14
 `2√x^2/100 + 4√x^4/50 + 8√x^8/25...` La raíz multiplica, mientras que el denominador dentro la raíz desdobla (divide).
+
+<details>
+  <summary>Ver código</summary>
+  
 ```vb
 Public Function SerieMultiplyAndUnfold(n As Integer, root As Double, num As Double, denom As Double, sumTotal As Boolean) As String
     Dim result As String = ""
@@ -424,9 +490,14 @@ F = 1.9987716171427177
 F = 2√( 1^ 2/ 100)  +   4√( 1^ 4/ 50)  +   8√( 1^ 8/ 25)  +   16√( 1^ 16/ 12.5)
 ```
 
+</details>
+
 ## Ejercicio 15
 (`2+x^(1/16)) + (4+x^(1/14))...` La base va doblando. OJO , HASTA QUE EL TERMINO DONDE X ELEVE A 1/2
 
+<details>
+  <summary>Ver código</summary>
+  
 ```vb
 Public Function SerieBaseIsDoubling(n As Integer, base As Double, x As Double, denom As Double, sumTotal As Boolean) As String
     Dim result As String = ""
@@ -458,3 +529,5 @@ F = 2056
 # Output string with params: SerieBaseIsDoubling(10, 2, 1, 16, False)
 F = ( 2+ 1^(1/ 16))  + ( 4+ 1^(1/ 14))  + ( 8+ 1^(1/ 12))  + ( 16+ 1^(1/ 10))  + ( 32+ 1^(1/ 8))  + ( 64+ 1^(1/ 6))  + ( 128+ 1^(1/ 4))  + ( 256+ 1^(1/ 2))
 ```
+
+</details>
