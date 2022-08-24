@@ -1,9 +1,9 @@
-## Practico 1 - Series
+# Practico 1 - Series
 Practico de Series de la introduccion a la informatica con el ingeniero Mollo.
 - Lenguaje de Programación: Visual Basic
 - [ver PDF del práctico](https://drive.google.com/file/d/17pNVzbHrNzvcWico6ENC5BTHh7xvRfQa/view?usp=sharing)
 
-# Contenido
+## Contenido
 1. [Generar la tabla de multiplicar de n](#ejercicio-1)
 2. [Generar la división de n](#ejercicio-1)
 3. [Generar la suma de n](#ejercicio-1)
